@@ -21,7 +21,7 @@ WHERE id = 4;
 --
 UPDATE workers
 SET salary = 600
-WHERE is_male=TRUE AND id > 2 AND id < 5;
+WHERE is_male=FALSE AND id >= 2 AND id <= 5;
 --
 UPDATE workers
 SET name = 'Yevgeniy', email = 'evgen@gmail.com'

@@ -8,9 +8,10 @@ CREATE TABLE workers (
 );
 --
 ALTER TABLE workers
+ADD COLUMN department varchar(256) NOT NULL DEFAULT '';
 ADD COLUMN is_male boolean,
 ADD COLUMN email varchar(256) CHECK (email != ''),
-ADD COLUMN department varchar(256) NOT NULL CHECK (department != '');
+
 --
 ALTER TABLE workers
 DROP COLUMN department;
